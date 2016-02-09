@@ -8,47 +8,6 @@ jQuery(function($) {
         $('#home-slider .item').css('height',slideHeight);
                                });
 
-    //Scroll Menu
-    $(window).on('scroll', function(){
-        if( $(window).scrollTop()>slideHeight ){
-            $('.main-nav').addClass('navbar-fixed-top');
-        } else {
-            $('.main-nav').removeClass('navbar-fixed-top');
-        }
-    });
-
-    // Navigation Scroll
-    $(window).scroll(function(event) {
-        Scroll();
-    });
-
-    $('.navbar-collapse ul li a').on('click', function() {  
-        $('html, body').animate({scrollTop: $(this.hash).offset().top - 10}, 700);
-        return false;
-    });
-
-    // User define function
-    function Scroll() {
-        var contentTop      =   [];
-        var contentBottom   =   [];
-        var winTop      =   $(window).scrollTop();
-        var rangeTop    =   200;
-        var rangeBottom =   500;
-
-        $('.navbar-collapse').find('.scroll a').each(function(){
-            contentTop.push( $( $(this).attr('href') ).offset().top);
-            contentBottom.push( $( $(this).attr('href') ).offset().top + $( $(this).attr('href') ).height() );
-        })
-        // Change active section
-        $.each( contentTop, function(i){
-            if ( winTop > contentTop[i] - rangeTop ){
-                $('.navbar-collapse li.scroll')
-                    .removeClass('active')
-                    .eq(i).addClass('active');			
-            }
-        })
-    };
-
     $('#tohash').on('click', function(){
         $('html, body').animate({scrollTop: $(this.hash).offset().top - 5}, 1000);
         return false;
@@ -70,17 +29,55 @@ jQuery(function($) {
     });
 
 
-    $(".link").click(function(e){
-        e.preventDefault();
-        $(".popup").fadeIn(300,function(){$(this).focus();});
-    });
-
-    $('.close').click(function() {
-        $(".popup").fadeOut(300);
-    });
-    $(".popup").on('blur',function(){
-        $(this).fadeOut(300);
-    });
-
 
 });
+
+
+
+/* Theme Name: Worthy - Free Powerful Theme by HtmlCoder
+ * Author:HtmlCoder
+ * Author URI:http://www.htmlcoder.me
+ * Version:1.0.0
+ * Created:November 2014
+ * License: Creative Commons Attribution 3.0 License (https://creativecommons.org/licenses/by/3.0/)
+ * File Description: Initializations of plugins 
+ */
+
+(function($){
+	$(document).ready(function(){
+	
+		// Fixed header
+		//-----------------------------------------------
+		$(window).scroll(function() {
+			if (($(".header.fixed").length > 0)) { 
+				if(($(this).scrollTop() > 0) && ($(window).width() > 767)) {
+					$("body").addClass("fixed-header-on");
+				} else {
+					$("body").removeClass("fixed-header-on");
+				}
+			};
+		});
+
+		$(window).load(function() {
+			if (($(".header.fixed").length > 0)) { 
+				if(($(this).scrollTop() > 0) && ($(window).width() > 767)) {
+					$("body").addClass("fixed-header-on");
+				} else {
+					$("body").removeClass("fixed-header-on");
+				}
+			};
+		});
+
+		//Scroll Spy
+		//-----------------------------------------------
+		if($(".scrollspy").length>0) {
+			$("body").addClass("scroll-spy");
+			$('body').scrollspy({ 
+				target: '.scrollspy',
+				offset: 152
+			});
+		}
+
+
+	}); // End document ready
+})(this.jQuery);

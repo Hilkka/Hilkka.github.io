@@ -1,3 +1,127 @@
+/* Bigger navigation bar
+----------------------------------------------------------------------------- */
+.header {
+	color: #ffffff;
+	background-color: rgba(0, 0, 0, 0.10);
+	padding: 10px 0;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+/* Navigations
+----------------------------------------------------------------------------- */
+.header .navbar {
+	margin-bottom: 0;
+}
+.main-navigation .navbar-default {
+	background-color: transparent;
+	border: none;
+}
+.main-navigation .navbar-default .navbar-nav > li > a {
+	color: #fff;
+	font-size: 14px;
+     text-transform: uppercase;	
+}
+.main-navigation .navbar-default .navbar-nav > li.active > a {
+	background-color: transparent;
+    font-weight: bold;
+	color: #297481;
+}
+.main-navigation .navbar-default .navbar-nav > li > a:hover,
+.main-navigation .navbar-default .navbar-nav > li.active > a:hover {
+	color: #297481;
+}
+
+@media (min-width:768px) {
+	.main-navigation .navbar-default .navbar-nav > li > a {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+}
+@media (min-width:768px) and (max-width:991px) {
+	.main-navigation .container-fluid {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.navbar-nav {
+		float: left !important;
+	}
+}
+@media (max-width:767px) {
+	.header.navbar-fixed-top {
+		position: absolute;
+	}
+}
+
+/* Fixed Header
+----------------------------------------------------------------------------- */
+.fixed-header-on .header {
+	background-color: #5a97a2;
+	padding: 5px 0;
+}
+.fixed-header-on .site-name {
+	font-size: 24px;
+}
+.fixed-header-on .logo {
+	-webkit-transform: scale(0.8);
+	transform: scale(0.8);
+	margin-top: 0;
+	margin-bottom: 0;
+}
+@media (min-width:768px) {
+	.fixed-header-on .navbar-default .navbar-nav > li > a {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+@media (max-width:991px) {
+	.fixed-header-on .logo,
+	.fixed-header-on .site-name,
+	.fixed-header-on .site-slogan {
+		display: none;
+	}
+}
+
+/* Logo, Site Name, Site Slogan
+---------------------------------- */
+.logo {
+	margin: 10px 10px 10px 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.logo,
+.site-name-and-slogan {
+	float: left;
+}
+.site-name {
+	font-size: 26px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.site-name a {
+	color: #297481;
+}
+.site-name a:hover {
+	text-decoration: none;
+}
+.site-slogan {
+	font-size: 12px;
+}
+
 /*************************
 *******Colors******
 **************************/
@@ -10,16 +134,19 @@ a,
   color: #5a97a2;
 }
 
+.site-name a {
+	color: #ffffff;
+}
+
 .btn.btn-primary:hover,
 .btn-submit:hover {
-  background-color: #297481
+  background-color: #297481;
 }
 
 a:hover, a:focus {
 	color: #297481;
 }
-
-.main-nav, 
+ 
 .feature-icon, 
 .progress-bar.progress-bar-primary, 
 .single-table.featured, 
@@ -103,14 +230,6 @@ h3 {
 
 .btn.btn-primary:hover {
     background-color: #690f2d;
-}
-
-.navbar-nav li a:hover, 
-.navbar-nav li a:focus {
-    outline:none;
-    outline-offset: 0;
-    text-decoration:none;  
-    background: transparent;
 }
 
 a {
@@ -212,23 +331,6 @@ section {
     animation: bounce 3000ms infinite;
 }
 
-.navbar-right li a {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 600;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.navbar-right li.active a {
-    background-color: rgba(0,0,0,.2);
-}
-
-.navbar-brand h1, .navbar-brand h3 {
-    margin-top: 5px;
-    color: #fff;
-}
 
 
 /*************************
@@ -496,7 +598,6 @@ ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
   background-color: #bfdee3;
 }
-
 
 
 

@@ -12,59 +12,103 @@
         <link href="css/lightbox.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
         <link href="css/responsive.css" rel="stylesheet">
+
         <!--[if lt IE 9]>
 <script src="js/html5shiv.js"></script>
 <script src="js/respond.min.js"></script>
 <![endif]-->
         <link rel="shortcut icon" href="images/favicon.ico">
+
     </head><!--/head-->
-
+    <script type="text/javascript" src="js/jquery.min.js"></script>
     <body>
-        <header id="home">
-            <div id="home-slider" class="carousel carousel-fade">
-                <div class="carousel-inner">
-                    <div class="item active" style="background-image: url(images/tausta1.jpg)">
-                        <div class="caption">
-                            <h1 class="animated fadeInLeftBig">Hi, I'm<span> Hilkka</span></h1>
-                            <p class="animated fadeInRightBig">UI Designer – Software Developer – Usability Tester</p>
-                            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#about-me">This way</a>
+
+        <!-- header start -->
+        <!-- ================ --> 
+        <header class="header fixed clearfix navbar navbar-fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+
+                        <!-- header-left start -->
+                        <!-- ================ -->
+                        <div class="header-left clearfix">
+                            <!-- logo -->
+                            <div class="logo smooth-scroll">
+                                <a href="#home-slider"><img id="logo" src="images/hl-logo.png" alt="none"></a>
+                            </div>
+
+                            <!-- name-and-slogan -->
+                            <div class="site-name-and-slogan smooth-scroll">
+                                <div class="site-name"><a href="#home-slider">Hilkka Lammi</a></div>
+                                <div class="site-slogan">UI Designer – Software Developer – Usability Tester</div>
+                            </div>
+
                         </div>
+                        <!-- header-left end -->
+
+                    </div>
+                    <div class="col-md-8">
+                        <!-- header-right start -->
+                        <!-- ================ -->
+                        <div class="header-right clearfix">
+
+                            <!-- main-navigation start -->
+                            <!-- ================ -->
+                            <div class="main-navigation animated">
+
+                                <!-- navbar start -->
+                                <!-- ================ -->
+                                <nav class="navbar navbar-default" role="navigation">
+                                    <div class="container-fluid">
+                                        <!-- Toggle get grouped for better mobile display -->
+                                        <div class="navbar-header">
+                                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                                                <span class="sr-only">Toggle navigation</span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+                                        </div>
+
+                                        <!-- Collect the nav links, forms, and other content for toggling -->
+                                        <div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+                                            <ul class="nav navbar-nav navbar-right">
+                                                <li class="active"><a href="#home-slider">Home</a></li>
+                                                <li><a href="#about-me">About me</a></li>
+                                                <li><a href="#my-skills">My Skills</a></li>
+                                                <li><a href="#projects">Projects</a></li>
+                                                <li><a href="#contact">Contact</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                                <!-- navbar end -->
+                            </div>
+                            <!-- main-navigation end -->
+                        </div>
+                        <!-- header-right end -->
+
                     </div>
                 </div>
-                <a id="tohash" href="#about-me"><i class="fa fa-angle-down"></i></a>
-            </div><!--/#home-slider-->
+            </div>
+        </header>
+        <!-- header end -->
 
-            <div class="main-nav">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-
-                        <a class="navbar-brand" href="index.html">
-                            <h1><img class="img-responsive" src="images/hl-logo.png" alt="logo"></h1>
-                        </a>    
-
-                    </div>
-                    <div class="collapse navbar-collapse">
-                        <a class="navbar-brand" href="#about-me">
-                            <h3>Hilkka Lammi</h3>
-                            <h6>UI Designer – Software Developer – Usability Tester</h6>
-                        </a> 
-                        <ul class="nav navbar-nav navbar-right">                 
-                            <li class="scroll active"><a href="#home">Home</a></li>
-                            <li class="scroll"><a href="#about-me">About me</a></li> 
-                            <li class="scroll"><a href="#my-skills">My skills</a></li>              
-                            <li class="scroll"><a href="#projects">Projects</a></li>
-                            <li class="scroll"><a href="#contact">Contact</a></li>       
-                        </ul>
+        <div id="home-slider" class="carousel carousel-fade">
+            <div class="carousel-inner">
+                <div class="item active" style="background-image: url(images/tausta1.jpg)">
+                    <div class="caption">
+                        <h1 class="animated fadeInLeftBig">Hi, I'm<span> Hilkka</span></h1>
+                        <p class="animated fadeInRightBig">UI Designer – Software Developer – Usability Tester</p>
+                        <a data-scroll class="btn btn-start animated fadeInUpBig" href="#about-me">This way</a>
                     </div>
                 </div>
-            </div><!--/#main-nav-->
-        </header><!--/#home-->
+            </div>
+            <a id="tohash" href="#about-me"><i class="fa fa-angle-down"></i></a>
+        </div><!--/#home-slider-->
+
+
 
         <section id="about-me">
             <div class="container">
@@ -131,19 +175,19 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="skills wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="200ms">
                                 <p class="lead">Native App Development</p>
                                 <div class="progress">
                                     <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="75">75%</div>
                                 </div>
                             </div>
-                            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="400ms">
+                            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
                                 <p class="lead">UI Design</p>
                                 <div class="progress">
                                     <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="90">90%</div>
                                 </div>
                             </div>
-                            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
+                            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="400ms">
                                 <p class="lead">Web Development</p>
                                 <div class="progress">
                                     <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="65">65%</div>
@@ -395,9 +439,12 @@
         <script type="text/javascript" src="js/jquery.inview.min.js"></script>
         <script type="text/javascript" src="js/wow.min.js"></script>
         <script type="text/javascript" src="js/mousescroll.js"></script>
-        <script type="text/javascript" src="js/smoothscroll.js"></script>
+        <script type="text/javascript" src="js/jquery.countTo.js"></script>
         <script type="text/javascript" src="js/lightbox.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+
+
+
 
     </body>
 </html>
