@@ -9,14 +9,8 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/animate.min.css" rel="stylesheet"> 
         <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/lightbox.css" rel="stylesheet">
-        <link href="css/main.css" rel="stylesheet">
         <link href="css/responsive.css" rel="stylesheet">
-
-        <!--[if lt IE 9]>
-<script src="js/html5shiv.js"></script>
-<script src="js/respond.min.js"></script>
-<![endif]-->
+        <link href="css/main.css" rel="stylesheet">
         <link rel="shortcut icon" href="images/favicon.ico">
         <link rel="image_src" href="images/tausta1.jpg" / >
 
@@ -29,74 +23,53 @@
         <header class="header fixed clearfix navbar navbar-fixed-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
-
-                        <!-- header-left start -->
-                        <!-- ================ -->
-                        <div class="header-left clearfix">
-                            <!-- logo -->
-                            <div class="logo smooth-scroll">
-                                <a href="#home-slider"><img id="logo" src="images/hl-logo.png" alt="none"></a>
-                            </div>
-
-                            <!-- name-and-slogan -->
-                            <div class="site-name-and-slogan smooth-scroll">
-                                <div class="site-name"><a href="#home-slider">Hilkka Lammi</a></div>
-                                <div class="site-slogan">UI Designer – Software Developer – Usability Tester</div>
-                            </div>
-
-                        </div>
-                        <!-- header-left end -->
-
+                    <!-- logo -->
+                    <div class="logo smooth-scroll">
+                        <a href="#home-slider"><img id="logo" src="images/hl-logo.png" alt="none"></a>
                     </div>
-                    <div class="col-md-8">
-                        <!-- header-right start -->
-                        <!-- ================ -->
-                        <div class="header-right clearfix">
-
-                            <!-- main-navigation start -->
-                            <!-- ================ -->
-                            <div class="main-navigation animated">
-
-                                <!-- navbar start -->
-                                <!-- ================ -->
-                                <nav class="navbar navbar-default" role="navigation">
-                                    <div class="container-fluid">
-                                        <!-- Toggle get grouped for better mobile display -->
-                                        <div class="navbar-header">
-                                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-                                                <span class="sr-only">Toggle navigation</span>
-                                                <span class="icon-bar"></span>
-                                                <span class="icon-bar"></span>
-                                                <span class="icon-bar"></span>
-                                            </button>
-                                        </div>
-
-                                        <!-- Collect the nav links, forms, and other content for toggling -->
-                                        <div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
-                                            <ul class="nav navbar-nav navbar-right">
-                                                <li class="active"><a href="#home-slider">Home</a></li>
-                                                <li><a href="#about-me">About me</a></li>
-                                                <li><a href="#my-skills">My Skills</a></li>
-                                                <li><a href="#projects">Projects</a></li>
-                                                <li><a href="#contact">Contact</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </nav>
-                                <!-- navbar end -->
-                            </div>
-                            <!-- main-navigation end -->
-                        </div>
-                        <!-- header-right end -->
-
+                    <!-- name-and-slogan -->
+                    <div class="site-name-and-slogan smooth-scroll">
+                        <div class="site-name"><a href="#home-slider">Hilkka Lammi</a></div>
+                        <div class="site-slogan">UI Designer – Software Developer – Usability Tester</div>
                     </div>
+                    <!-- main-navigation start -->
+                    <!-- ================ -->
+                    <div class="main-navigation animated">
+                        <!-- navbar start -->
+                        <!-- ================ -->
+                        <nav class="navbar navbar-default" role="navigation">
+                            <div class="container-fluid">
+                                <!-- Toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class="active"><a href="#home-slider">Home</a></li>
+                                        <li><a href="#about-me">About me</a></li>
+                                        <li><a href="#my-skills">My Skills</a></li>
+                                        <li><a href="#projects">Projects</a></li>
+                                        <li><a href="#contact">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <!-- navbar end -->
+                    </div>
+                    <!-- main-navigation end -->
                 </div>
             </div>
         </header>
         <!-- header end -->
 
-        <div id="home-slider" class="carousel carousel-fade">
+        <div id="home-slider" class="carousel-fade">
             <div class="carousel-inner">
                 <div class="item active" style="background-image: url(images/tausta1.jpg)">
                     <div class="caption">
@@ -305,7 +278,7 @@
                             <div class="entry-content">
                                 <p>Findkino is a simple Android app I created for browsing the movie schedule of Finnkino movie theatres. 
                                     It uses XML data provided by Finnkino and JSON from OMDb API to show the imdb reviews of the available movies.
-                                <a href="https://play.google.com/store/apps/details?id=lammi.findkino&hl=fi">Download from Play Store</a></p>
+                                    <a href="https://play.google.com/store/apps/details?id=lammi.findkino&hl=fi">Download from Play Store</a></p>
                             </div>
                         </div>
 
@@ -441,12 +414,7 @@
         <script type="text/javascript" src="js/jquery.inview.min.js"></script>
         <script type="text/javascript" src="js/wow.min.js"></script>
         <script type="text/javascript" src="js/mousescroll.js"></script>
-        <script type="text/javascript" src="js/jquery.countTo.js"></script>
-        <script type="text/javascript" src="js/lightbox.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
-
-
-
 
     </body>
 </html>
